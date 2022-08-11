@@ -1,0 +1,9 @@
+.interact {
+    transition: color var(--transition);
+
+    &:hover,
+        &:focus {
+            color: var(--accent-txt-cl);
+        }
+}
+

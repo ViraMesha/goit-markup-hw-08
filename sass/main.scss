@@ -1,0 +1,38 @@
+// utils styles
+@import './utils/variables';
+@import './utils/_visually-hidden';
+@import './utils/placeholders';
+
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components styles
+@import './components/container';
+@import './components/card-set';
+@import './components/logo';
+@import './components/buttons';
+@import './components/interactive';
+@import './components/current';
+@import './components/titles';
+@import './components/socials';
+@import './components/filters';
+@import './components/subscription';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+
+// layout styles
+@import './layout/header';
+@import './layout/nav';
+@import './layout/contacts';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/footer';
+
+

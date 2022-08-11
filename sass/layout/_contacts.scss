@@ -1,0 +1,14 @@
+.contacts {
+    &__link {
+            @extend %link;
+            display: flex;
+            gap: 10px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            align-items: center;
+        }
+    
+     &__icon {
+            fill: currentColor;
+        }
+}

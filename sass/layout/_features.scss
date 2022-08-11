@@ -1,0 +1,22 @@
+.features {
+    @extend %section;
+
+    &__list {
+        @extend %list;
+        --card-item: 4;
+    }
+    
+    &__thumb {
+        display: flex;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--light-grey-cl);
+        margin-bottom: 30px;
+    }
+    
+    &__subtitle {
+        margin-bottom: 10px;
+        color: var(--main-txt-cl);
+    }
+}

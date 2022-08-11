@@ -1,0 +1,16 @@
+.section-title {
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+
+.item-subtitle {
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

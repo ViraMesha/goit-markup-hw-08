@@ -1,0 +1,11 @@
+body {
+    font-family: var(--main-font);
+    color: var(--third-txt-cl);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

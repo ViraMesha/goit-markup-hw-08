@@ -1,0 +1,38 @@
+.nav {
+    &__logo {
+            @extend %link;
+            margin-right: 93px;
+    
+            &--black {
+                display: inline-block;
+                color: var(--dark-txt-cl);
+            }
+        }
+    
+    &__list {
+            @extend %list;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            color: var(--main-txt-cl);
+        }
+    
+    &__link {
+            @extend %link;
+            display: flex;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            align-items: center;
+    
+            &--current {
+                position: relative;
+            }
+        }
+    
+    &__contacts {
+            @extend %list;
+            display: flex;
+            gap: 50px;
+            margin-left: auto;
+        }
+}
