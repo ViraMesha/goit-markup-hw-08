@@ -2,6 +2,8 @@
     &__link {
             @extend %link;
             display: flex;
+            justify-content: center;
+            align-items: center;
 
 @include mq(tab-only) {
       gap: 8px;

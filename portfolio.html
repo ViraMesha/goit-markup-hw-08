@@ -209,13 +209,42 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Открытый ноутбук с изображением сотрудников"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\portfolio\img@1x_lg.webp x1, ./images\portfolio\img@2x-lg.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images\portfolio\img@1x_lg.jpg x1, ./images\portfolio\img@2x_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\portfolio\img@1x_md.webp x1, ./images\portfolio\img@2x_md.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images\portfolio\img@1x_md.jpg x1, ./images\portfolio\img@2x_md.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images\portfolio\img@1x_sm.webp x1, ./images\portfolio\img@2x_sm.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images\portfolio\img@1x_sm.jpg x1, ./images\portfolio\img@2x_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_lg.jpg"
+                      alt="Открытый ноутбук с изображением сотрудников"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -234,13 +263,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-2.jpg"
-                    alt="Игра в волейбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-1.webp 1x,
+                        ./images\portfolio\img@2x_lg-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-1.jpg 1x,
+                        ./images\portfolio\img@2x_lg-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-1.webp 1x,
+                        ./images\portfolio\img@2x_md-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-1.jpg 1x,
+                        ./images\portfolio\img@2x_md-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-1.webp 1x,
+                        ./images\portfolio\img@2x_sm-1.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-1.jpg 1x,
+                        ./images\portfolio\img@2x_sm-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-1.jpg"
+                      alt="Игра в волейбол"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -261,13 +337,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-3.jpg"
-                    alt="Лого ресторана The seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-2.webp 1x,
+                        ./images\portfolio\img@2x_lg-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-2.jpg 1x,
+                        ./images\portfolio\img@2x_lg-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-2.webp 1x,
+                        ./images\portfolio\img@2x_md-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-2.jpg 1x,
+                        ./images\portfolio\img@2x_md-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-2.webp 1x,
+                        ./images\portfolio\img@2x_sm-2.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-2.jpg 1x,
+                        ./images\portfolio\img@2x_sm-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-2.jpg"
+                      alt="Лого ресторана The seafood"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -286,13 +409,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-3.webp 1x,
+                        ./images\portfolio\img@2x_lg-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-3.jpg 1x,
+                        ./images\portfolio\img@2x_lg-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-3.webp 1x,
+                        ./images\portfolio\img@2x_md-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-3.jpg 1x,
+                        ./images\portfolio\img@2x_md-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-3.webp 1x,
+                        ./images\portfolio\img@2x_sm-3.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-3.jpg 1x,
+                        ./images\portfolio\img@2x_sm-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-3.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -311,13 +481,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-5.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-4.webp 1x,
+                        ./images\portfolio\img@2x_lg-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-4.jpg 1x,
+                        ./images\portfolio\img@2x_lg-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-4.webp 1x,
+                        ./images\portfolio\img@2x_md-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-4.jpg 1x,
+                        ./images\portfolio\img@2x_md-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-4.webp 1x,
+                        ./images\portfolio\img@2x_sm-4.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-4.jpg 1x,
+                        ./images\portfolio\img@2x_sm-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-4.jpg"
+                      alt="Коробки"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -336,13 +553,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-6.jpg"
-                    alt="Монитор компьютера с изображением информации"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-5.webp 1x,
+                        ./images\portfolio\img@2x_lg-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-5.jpg 1x,
+                        ./images\portfolio\img@2x_lg-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-5.webp 1x,
+                        ./images\portfolio\img@2x_md-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-5.jpg 1x,
+                        ./images\portfolio\img@2x_md-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-5.webp 1x,
+                        ./images\portfolio\img@2x_sm-5.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-5.jpg 1x,
+                        ./images\portfolio\img@2x_sm-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-5.jpg"
+                      alt="Монитор компьютера с изображением информации"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -363,13 +627,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-7.jpg"
-                    alt="Открытый журнал со статьей и фотографиями"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-6.webp 1x,
+                        ./images\portfolio\img@2x_lg-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-6.jpg 1x,
+                        ./images\portfolio\img@2x_lg-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-6.webp 1x,
+                        ./images\portfolio\img@2x_md-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-6.jpg 1x,
+                        ./images\portfolio\img@2x_md-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-6.webp 1x,
+                        ./images\portfolio\img@2x_sm-6.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-6.jpg 1x,
+                        ./images\portfolio\img@2x_sm-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-6.jpg"
+                      alt="Открытый журнал со статьей и фотографиями"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -390,13 +701,60 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-8.jpg"
-                    alt="Бирка с надписом LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-7.webp 1x,
+                        ./images\portfolio\img@2x_lg-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-7.jpg 1x,
+                        ./images\portfolio\img@2x_lg-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-7.webp 1x,
+                        ./images\portfolio\img@2x_md-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-7.jpg 1x,
+                        ./images\portfolio\img@2x_md-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-7.webp 1x,
+                        ./images\portfolio\img@2x_sm-7.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-7.jpg 1x,
+                        ./images\portfolio\img@2x_sm-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images\portfolio\img@1x_sm-7.jpg"
+                      alt="Бирка с надписом LAB"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -415,13 +773,61 @@
             <li class="portfolio__item card-item">
               <a class="portfolio__link" href="">
                 <div class="portfolio-wrapper">
-                  <img
-                    class="portfolio-wrapper__img"
-                    src="./images/portfolio/img-9.jpg"
-                    alt="Открытый ноутбук с изображением веб-страницы Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="portfolio-wrapper__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-8.webp 1x,
+                        ./images\portfolio\img@2x_lg-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images\portfolio\img@1x_lg-8.jpg 1x,
+                        ./images\portfolio\img@2x_lg-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-8.webp 1x,
+                        ./images\portfolio\img@2x_md-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images\portfolio\img@1x_md-8.jpg 1x,
+                        ./images\portfolio\img@2x_md-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-8.webp 1x,
+                        ./images\portfolio\img@2x_sm-8.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images\portfolio\img@1x_sm-8.jpg 1x,
+                        ./images\portfolio\img@2x_sm-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images\portfolio\img@1x_sm-8.jp"
+                      alt="Открытый ноутбук с изображением веб-страницы Growing Business"
+                    />
+                  </picture>
                   <div class="portfolio-wrapper__overlay">
                     <p class="portfolio-wrapper__txt">
                       Ресурс пропонує комплексні пропозиції з різним рівнем

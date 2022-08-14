@@ -259,13 +259,22 @@
           <ul class="about__list card-set">
             <li class="about__item card-item">
               <div class="about__wrapper">
-                <img
-                  class="about__img"
-                  src="./images/main/img.jpg"
-                  alt="мужчина печатает, перед ним планшет и компьютер"
-                  width="370"
-                  height="294"
-                />
+                <picture class="about__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-1@1x.webp x1, ./images\main\about\img-1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-1@1x.jpg x1, ./images\main\about\img-1@2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images\main\about\img-1@1x.jpg"
+                    alt="мужчина печатает, перед ним планшет и компьютер"
+                  />
+                </picture>
                 <div class="about__box item-subtitle">
                   <p class="about__txt">Десктопні додатки</p>
                 </div>
@@ -273,13 +282,23 @@
             </li>
             <li class="about__item card-item">
               <div class="about__wrapper">
-                <img
-                  class="about__img"
-                  src="./images/main/img2.jpg"
-                  alt="девушка смотрит в телефон, сидя перед компьютером"
-                  width="370"
-                  height="294"
-                />
+                <picture class="about__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-2@1x-1.webp x1, ./images\main\about\img-2@2x-1.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-2@1x-1.jpg x1, ./images\main\about\img-2@2x-1.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images\main\about\img-2@1x-1.jpg"
+                    alt="девушка смотрит в телефон, сидя перед компьютером"
+                  />
+                </picture>
+
                 <div class="about__box item-subtitle">
                   <p class="about__txt">Мобільні додатки</p>
                 </div>
@@ -287,13 +306,22 @@
             </li>
             <li class="about__item card-item">
               <div class="about__wrapper">
-                <img
-                  class="about__img"
-                  src="./images/main/img3.jpg"
-                  alt="девушка держит в руках графичекский планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture class="about__img">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-3@1x-2.webp x1, ./images\main\about\img-3@2x-2.webp x2"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images\main\about\img-3@1x-2.jpg x1, ./images\main\about\img-3@2x-2.jpg x2"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images\main\about\img-3@1x-2.jpg"
+                    alt="девушка держит в руках графичекский планшет"
+                  />
+                </picture>
                 <div class="about__box item-subtitle">
                   <p class="about__txt">Дизайнерські рішення</p>
                 </div>
@@ -312,33 +340,35 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./images\main\team\person-1@1x_lg.webp 1x,
-                    ./images\main\team\person-1@2x_lg.webp 2x
+                    ./images\main\team\img@1x_lg.webp 1x,
+                    ./images\main\team\img@2x_lg.webp 2x
                   "
                   type="image/webp"
                 />
+
                 <source
                   media="(min-width: 1200px)"
                   srcset="
-                    ./images\main\team\person-1@1x_lg.jpg 1x,
-                    ./images\main\team\person-1@2x_lg.jpg 2x
+                    ./images\main\team\img@1x_lg.jpg 1x,
+                    ./images\main\team\img@2x_lg.jpg 2x
                   "
                   type="image/jpg"
                 />
 
-                <source
-                  media="(min-width: 768x)"
-                  srcset="
-                    ./images\main\team\person-1@1x_md.webp 1x,
-                    ./images\main\team\person-1@2x_md.webp 2x
-                  "
-                  type="image/webp"
-                />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    ./images\main\team\person-1@1x_md.jpg 1x,
-                    ./images\main\team\person-1@2x_md.jpg 2x
+                    ./images\main\team\img@1x_md.webp 1x,
+                    ./images\main\team\img@2x_md.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\main\team\img@1x_md.jpg 1x,
+                    ./images\main\team\img@2x_md.jpg 2x
                   "
                   type="image/jpg"
                 />
@@ -346,26 +376,26 @@
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./images\main\team\person-1@1x_sm.webp 1x,
-                    ./images\main\team\person-1@2x_sm.webp 2x
+                    ./images\main\team\img@1x_sm.webp 1x,
+                    ./images\main\team\img@2x_sm.webp 2x
                   "
                   type="image/webp"
                 />
+
                 <source
                   media="(max-width: 767px)"
                   srcset="
-                    ./images\main\team\person-1@1x_sm.jpg 1x,
-                    ./images\main\team\person-1@2x_sm.jpg 2x
+                    ./images\main\team\img@1x_sm.jpg 1x,
+                    ./images\main\team\img@2x_sm.jpg 2x
                   "
                   type="image/jpg"
                 />
 
                 <img
-                  src="./images\main\team\person-1@1x_sm.jpg"
+                  src="./images\main\team\img@1x_sm.jpg"
                   alt="молодой мужчина, с короткими волосами, шатен, в очках и с бородой, улыбается"
                 />
               </picture>
-
               <div class="team__members">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__txt">Product Designer</p>
@@ -429,39 +459,61 @@
               <picture class="team__img">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-2@1x_lg-1.webp x1, ./images\main\team\person-2@2x_lg-1.webp 2x"
+                  srcset="
+                    ./images\main\team\img@1x_lg-1.webp 1x,
+                    ./images\main\team\img@2x_lg-1.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-2@1x_lg-1.jpg x1, ./images\main\team\person-2@2x_lg-1.jpg 2x"
+                  srcset="
+                    ./images\main\team\img@1x_lg-1.jpg 1x,
+                    ./images\main\team\img@2x_lg-1.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-2@1x_md-1.webp x1, ./images\main\team\person-2@2x_md-1.webp 2x"
+                  srcset="
+                    ./images\main\team\img@1x_md-1.webp 1x,
+                    ./images\main\team\img@2x_md-1.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-2@1x_md-1.jpg x1, ./images\main\team\person-2@2x_md-1.jpg 2x"
+                  srcset="
+                    ./images\main\team\img@1x_md-1.jpg 1x,
+                    ./images\main\team\img@2x_md-1.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-2@1x_sm-1.webp x1, ./images\main\team\person-2@2x_sm-1.webp 2x"
+                  srcset="
+                    ./images\main\team\img@1x_sm-1.webp 1x,
+                    ./images\main\team\img@2x_sm-1.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-2@1x_sm-1.jpg x1, ./images\main\team\person-2@2x_sm-1.jpg 2x"
+                  srcset="
+                    ./images\main\team\img@1x_sm-1.jpg 1x,
+                    ./images\main\team\img@2x_sm-1.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <img
-                  src="./images/main/team/person-2@2x_sm-1.jpg"
+                  src="./images\main\team\img@1x_sm-1.jpg"
                   alt="молодая девушка, блондинка, волосы средней длины"
                 />
               </picture>
+
               <div class="team__members">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__txt">Frontend Developer</p>
@@ -525,39 +577,63 @@
               <picture class="team__img">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-3@1x_lg-2.webp x1, ./images\main\team\person-3@2x_lg-2.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_lg-2.webp 1x,
+                    ./images\main\team\img@2x_lg-2.webp 2x
+                  "
                   type="image/webp"
                 />
+
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-3@1x_lg-2.jpg x1, ./images\main\team\person-3@2x_lg-2.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_lg-2.jpg 1x,
+                    ./images\main\team\img@2x_lg-2.jpg 2x
+                  "
                   type="image/jpg"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-3@1x_md-2.webp x1, ./images\main\team\person-3@2x_md-2.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_md-2.webp 1x,
+                    ./images\main\team\img@2x_md-2.webp 2x
+                  "
                   type="image/webp"
                 />
+
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-3@1x_md-2.jpg x1, ./images\main\team\person-3@2x_md-2.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_md-2.jpg 1x,
+                    ./images\main\team\img@2x_md-2.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-3@1x_sm-2.webp x1, ./images\main\team\person-3@2x_sm-2.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_sm-2.webp 1x,
+                    ./images\main\team\img@2x_sm-2.webp 2x
+                  "
                   type="image/webp"
                 />
+
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-3@1x_sm-2.jpg x1, ./images\main\team\person-3@2x_sm-2.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_sm-2.jpg 1x,
+                    ./images\main\team\img@2x_sm-2.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <img
-                  src="./images\main\team\person-3@1x_sm-2.jpg"
+                  src="./images\main\team\img@1x_sm-2.jpg"
                   alt="молодой мужчина, короткая стрижка, шатен, улыбается"
                 />
               </picture>
+
               <div class="team__members">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__txt">Marketing</p>
@@ -621,36 +697,56 @@
               <picture class="team__img">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-4@1x_lg-3.webp x1, ./images\main\team\person-4@1x_lg-3.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_lg-3.webp 1x,
+                    ./images\main\team\img@2x_lg-3.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./images\main\team\person-4@1x_lg-3.jpg x1, ./images\main\team\person-4@1x_lg-3.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_lg-3.jpg 1x,
+                    ./images\main\team\img@2x_lg-3.jpg 2x
+                  "
                   type="image/jpg"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-4@1x_md-3.webp x1, ./images\main\team\person-4@1x_md-3.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_md-3.webp 1x,
+                    ./images\main\team\img@2x_md-3.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./images\main\team\person-4@1x_md-3.jpg x1, ./images\main\team\person-4@1x_md-3.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_md-3.jpg 1x,
+                    ./images\main\team\img@2x_md-3.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-4@1x_sm-3.webp x1, ./images\main\team\person-4@1x_sm-3.webp x2"
+                  srcset="
+                    ./images\main\team\img@1x_sm-3.webp 1x,
+                    ./images\main\team\img@2x_sm-3.webp 2x
+                  "
                   type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images\main\team\person-4@1x_sm-3.jpg x1, ./images\main\team\person-4@1x_sm-3.jpg x2"
+                  srcset="
+                    ./images\main\team\img@1x_sm-3.jpg 1x,
+                    ./images\main\team\img@2x_sm-3.jpg 2x
+                  "
                   type="image/jpg"
                 />
+
                 <img
-                  src="./images\main\team\person-4@1x_sm-3.jpg"
+                  src="./images\main\team\img@1x_sm-3.jpg"
                   alt="молодой парень, брюнет, с бородой, в очках, улыбается"
                 />
               </picture>
