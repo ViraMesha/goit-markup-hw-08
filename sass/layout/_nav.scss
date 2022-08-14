@@ -2,6 +2,10 @@
     
   &__logo {
     @extend %link;
+
+    @include mq(noMob) {
+      display: flex;
+    }
     
     &--black {
             display: inline-block;
@@ -34,8 +38,7 @@
       display: flex;
       padding-top: 32px;
       padding-bottom: 32px;
-      align-items: center;
-      justify-content: center;
+      
 
       &--current {
         position: relative;

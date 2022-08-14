@@ -8,6 +8,10 @@
         line-height: calc(23 / 20);
         text-align: center;
         color: var(--main-txt-cl);
+
+        @include mq(noDesk) {
+        line-height: calc(30 / 20);
+        }
     }
     
     &__group {
@@ -64,10 +68,15 @@
     &__checkbox {
 margin-bottom: 30px;
     flex-direction: row;
-    gap: 7px;
+    gap: 8px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @include mq(noDesk) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
     }
 }
 
@@ -101,6 +110,11 @@ margin-bottom: 30px;
                 line-height: calc(14 / 12);
                 letter-spacing: 0.01em;
                 color: rgba(117, 117, 117, 0.5);
+
+                @include mq(noDesk) {
+                    font-size: 14px;
+                    line-height: calc(16 / 14);
+                }
             }
     }
 }

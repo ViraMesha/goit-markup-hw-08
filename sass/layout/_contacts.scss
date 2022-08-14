@@ -2,7 +2,6 @@
     &__link {
             @extend %link;
             display: flex;
-            justify-content: center;
             align-items: center;
 
 @include mq(tab-only) {
@@ -28,21 +27,32 @@
 
   &__list {
       @extend %list;
+    margin-left: auto;
+
+      @include mq(tab-only) {
+font-size: 12px;
+    line-height: calc(14 / 12);
+      }
+
+
+      @include mq(desk) {
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 30px;
+      }
 
-@include mq(tab-only) {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 12px;
-        line-height: calc(14 / 12);
-    }
-
-          @include mq(desk) {
-              gap: 30px;
-          }
 }
+
+&__item {
+    @include mq(tab-only) {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+ 
 
 
   }

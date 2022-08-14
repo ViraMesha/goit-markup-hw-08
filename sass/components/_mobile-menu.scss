@@ -54,11 +54,13 @@
   @include mq(noMob) {
     display: none;
   }
-        display: none;
           position: fixed;
           top: 0;
           left: 0;
           z-index: 10;
+
+                    display: flex;
+                    flex-direction: column;
         
           background-color: var(--light-bg-cl);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -75,8 +77,6 @@
             transition: transform var(--transition);
         
           &.is-open {
-            display: flex;
-            flex-direction: column;
             transform: translateX(0);
           }
 

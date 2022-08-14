@@ -18,17 +18,12 @@
 
     &__nav {
        display: flex; 
+       justify-content: center;
+       align-items: center;
+       width: 100%;
 
        @include  mq(mob-only) {
         display: none;
-       }
-
-       @include mq(tab-only) {
-        gap: 80px;
-       }
-
-       @include mq(desk) {
-        gap: 300px;
        }
 }
 
