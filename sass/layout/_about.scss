@@ -1,9 +1,16 @@
 .about {
-    @extend %section;
+    @include mq(noDesk) {
+        display: none;
+    }
+    
     padding-top: 0;
+    padding-bottom: 94px;
 
     &__list {
         @extend %list;
+        @include mq(desk) {
+            --card-item:3;
+        }
     }
     
     &__wrapper {

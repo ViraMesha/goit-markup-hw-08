@@ -1,0 +1,156 @@
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+
+
+  &.is-open {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 100;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__icon-burger {
+    .menu-btn.is-open & {
+      display: none;
+    }
+  }
+
+  &__icon-close {
+    display: none;
+
+
+    .menu-btn.is-open & {
+      display: block;
+    }
+  }
+  
+
+  @include mq(noMob) {
+    display: none;
+  }
+}
+
+
+.menu-container {
+
+  @include mq(noMob) {
+    display: none;
+  }
+        display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 10;
+        
+          background-color: var(--light-bg-cl);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+        
+        width: 100vw;
+        height: 100vh;
+        
+          padding: 48px 40px;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+
+          transform: translateX(100%);
+            transition: transform var(--transition);
+        
+          &.is-open {
+            display: flex;
+            flex-direction: column;
+            transform: translateX(0);
+          }
+
+          
+  }
+  
+
+.mobile-nav {
+
+    @include mq(noMob) {
+        display: none;
+      }
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  color: var(--main-txt-cl);
+
+  &:first-child {
+    margin-bottom: auto;
+  }
+
+  &__link:active {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.mobile-contacts {
+
+    @include mq(noMob) {
+        display: none;
+      }
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__phone {
+    display: block;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    &:active {
+      color: var(--accent-txt-cl);
+    }
+  }
+}
+
+.mobile-socials {
+
+  @include mq(noMob) {
+    display: none;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: var(--accent-txt-cl);
+
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

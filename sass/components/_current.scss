@@ -11,5 +11,9 @@
         height: 4px;
         background-color: var(--accent-txt-cl);
         border-radius: 2px;
+
+        @include mq(mob-only) {
+            display: none;
+        }
     }
 }

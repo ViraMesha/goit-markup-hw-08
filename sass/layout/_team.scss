@@ -1,11 +1,11 @@
 .team {
-    @extend %section;
-    padding-top: 0;
+    @include section;
     background-color: var(--light-grey-cl);
 
     &__list {
         @extend %list;
-        --card-item: 4;
+
+        @include mq(desk) {--card-item: 4;}
     }
     
     &__item {
@@ -16,8 +16,12 @@
     
     &__members {
         text-align: center;
-        padding: 30px;
+        padding: 30px 24px;
         background: var(--light-bg-cl);
+
+        @include mq(desk) {
+            padding: 30px;
+        }
     }
     
     &__subtitle {

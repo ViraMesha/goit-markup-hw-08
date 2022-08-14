@@ -1,30 +1,37 @@
 .clients {
-    @extend %section;
+  @include section;
 
-    &__list {
-        @extend %list;
-        --card-item: 6;
+  &__list {
+    @extend %list;
+    --card-item: 2;
+
+    @include mq(tab) {
+      --card-item: 3;
     }
     
-    &__link {
-        @extend %link;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 92px;
-        color: var(--icons-cl);
-        border: 1px solid currentColor;
-        border-radius: 4px;
-        transition: color var(--transition);
-        
-        &:hover,
-        &k:focus {
-            color: var(--accent-txt-cl);
-        }
+    @include mq(desk) {
+      --card-item: 6;
     }
-    
-    
-    &__icon {
-        fill: currentColor;
+  }
+
+  &__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    color: var(--icons-cl);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    transition: color var(--transition);
+
+    &:hover,
+    &k:focus {
+      color: var(--accent-txt-cl);
     }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }

@@ -1,9 +1,20 @@
 .logo {
+
+    @include mq(mob-only) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
     display: block;
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--accent-txt-cl);
+
+    @include mq(desk) {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
 }

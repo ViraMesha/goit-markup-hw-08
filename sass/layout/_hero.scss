@@ -1,4 +1,10 @@
 .hero {
+
+    @include mq(noDesk) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
@@ -16,16 +22,36 @@
     background-size: cover;
 
     &__title {
-        max-width: 696px;
+
+        @include mq(noDesk) {
+            max-width: 360px;
+            font-size: 26px;
+            line-height: calc(42 / 26);
+        }
+
+        @include mq(desk) {
+max-width: 696px;
+
+font-size: 44px;
+    line-height: calc(60 / 44);
+        }
+       
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
     
         font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
+        
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--secondary-txt-cl);
     }
+
+    &__btn {
+@include mq(mob-only) {
+    padding: 10px 24px;
+}
+    }
+
+   
 }

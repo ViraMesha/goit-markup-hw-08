@@ -2,13 +2,50 @@
     &__link {
             @extend %link;
             display: flex;
-            gap: 10px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-            align-items: center;
-        }
-    
-     &__icon {
-            fill: currentColor;
-        }
+
+@include mq(tab-only) {
+      gap: 8px;
+    }
+
+    @include mq(desk) {
+        gap: 10px;
+    }
 }
+
+  &__icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      @include mq(mob-only) {
+          display: none;
+      }
+
+      fill: currentColor;
+  }
+
+  &__list {
+      @extend %list;
+display: flex;
+align-items: center;
+justify-content: center;
+
+@include mq(tab-only) {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+    }
+
+          @include mq(desk) {
+              gap: 30px;
+          }
+}
+
+
+  }
+
+        
+    
+   
+        

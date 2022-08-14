@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/_visually-hidden';
 @import './utils/placeholders';
+@import './utils/mixin';
 
 
 // base styles
@@ -22,6 +23,7 @@
 @import './components/backdrop';
 @import './components/modal';
 @import './components/form';
+@import './components/mobile-menu';
 
 // layout styles
 @import './layout/header';

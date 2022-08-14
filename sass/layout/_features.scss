@@ -1,9 +1,12 @@
 .features {
-    @extend %section;
+ @include section;
 
     &__list {
         @extend %list;
-        --card-item: 4;
+
+        @include mq(desk) {
+              --card-item: 4;
+        }
     }
     
     &__thumb {
@@ -18,5 +21,9 @@
     &__subtitle {
         margin-bottom: 10px;
         color: var(--main-txt-cl);
+
+        @include mq(mob-only) {
+            text-align: center;
+        }
     }
 }

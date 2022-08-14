@@ -1,8 +1,12 @@
 .portfolio {
-    @extend %section;
+    @include section;
 
     &__list {
         @extend %list;
+
+        @include mq(desk) {
+            --card-item: 3;
+        }
     }
     
     &__link {

@@ -1,17 +1,35 @@
 .header {
+
+    @include mq(mob-only) {
+        font-weight: 700;
+            font-size: 24px;
+            line-height: calc(28 / 24);
+    }
+
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     border-bottom: 1px solid var(--header-border-cl);
 
     &__container {
-        display: flex;
+    display: flex;
+    align-items: center;
     }
-    
+
     &__nav {
-        display: flex;
-        margin-right: auto;
-        align-items: center;
+       display: flex; 
+
+       @include  mq(mob-only) {
+        display: none;
+       }
+
+       @include mq(tab-only) {
+        gap: 80px;
+       }
+
+       @include mq(desk) {
+        gap: 300px;
+       }
 }
 
 }
