@@ -3,6 +3,11 @@
   &__logo {
     @extend %link;
 
+    @include mq(mob-only) {
+      padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     @include mq(noMob) {
       display: flex;
     }

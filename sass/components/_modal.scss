@@ -1,6 +1,5 @@
 .modal {
     position: relative;
-    width: 450px;
     min-height: 609px;
     padding: 40px;
     background-color: var(--light-bg-cl);
@@ -9,6 +8,16 @@
     border-radius: 4px;
     transition: opacity 500ms linear, transform 500ms linear;
     
+    @include mq(noDesk) {
+        position: absolute;
+        top: 73%;
+        left: 58%;
+        transform: translate(-63%, -58%);
+ max-width: 100%;
+width: 450px;
+
+    }
+
     @include mq(desk) {
         width: 528px;
         min-height: 581px;

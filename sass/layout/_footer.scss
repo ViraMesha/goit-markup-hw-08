@@ -7,6 +7,9 @@
 
         @include mq(mob-only) {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
         }
 
 @include mq(tab-only) {
@@ -24,10 +27,17 @@
     }
 
     &__box {
+
+        @include mq(mob-only) {
+            display: flex;
+            flex-direction: column;
+        gap: 60px;
+        }
+
         @include mq(tab-only) {
 display: flex;
 gap: 165px;
-justify-content: center
+justify-content: center;
         }
 
         @include mq(desk) {
@@ -39,6 +49,10 @@ justify-content: center
     
     &__address {
         color: var(--secondary-txt-cl);
+
+        @include mq(tab-only) {
+text-align: center
+        }
     }
     
     &__logo {
@@ -52,10 +66,6 @@ justify-content: center
     }
     
     &__socials {
-
-        @include mq(mob-only) {
-                margin-bottom: 60px;
-            }
 
         @extend %list;
         display: flex;
@@ -99,12 +109,6 @@ justify-content: center
             }
         }
     }
-
-    &__phone {
-        @include mq(mob-only) {
-            margin-bottom: 60px;
-        }
-    }
     
     &__link {
         @extend %link;
@@ -116,6 +120,10 @@ justify-content: center
 }
 
 .footer-socials {
+
+    @include mq(tab-only) {
+        text-align: center;
+    }
 
     &__title {
         font-weight: 700;

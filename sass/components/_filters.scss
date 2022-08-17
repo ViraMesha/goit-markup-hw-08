@@ -6,6 +6,9 @@
     @include mq(mob-only) {
         max-width: 326px;
         flex-wrap: wrap;
+row-gap: 15px;
+column-gap: 8px;
+
         margin-bottom: 40px;
 
         font-weight: 500;
