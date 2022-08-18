@@ -38,6 +38,7 @@
 display: flex;
 gap: 165px;
 justify-content: center;
+align-items: baseline;
         }
 
         @include mq(desk) {
